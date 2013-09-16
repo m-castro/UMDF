@@ -23,7 +23,10 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.info_layout);
+                Intent infoIntent = new Intent(getApplicationContext(), Information.class);
+                infoIntent.putExtra(" ", " ");
+                startActivity(infoIntent);
+//                setContentView(R.layout.info_layout);
 //                Intent infoIntent = new Intent(setContentView(R.layout.info_layout));
             }
         });
