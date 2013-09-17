@@ -9,7 +9,7 @@ import android.widget.TextView;
 /**
  * Created by Manny on 9/16/13.
  */
- class Information extends MainActivity {
+class Information extends MainActivity {
 
 
     @Override
