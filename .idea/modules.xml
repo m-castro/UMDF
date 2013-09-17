@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/UMDF/UMDF.iml" filepath="$PROJECT_DIR$/UMDF/UMDF.iml" />
-      <module fileurl="file://$PROJECT_DIR$/UMDFProject.iml" filepath="$PROJECT_DIR$/UMDFProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UMDF/src/main/main.iml" filepath="$PROJECT_DIR$/UMDF/src/main/main.iml" />
     </modules>
   </component>
 </project>
