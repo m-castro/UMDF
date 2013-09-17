@@ -18,8 +18,8 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbutton"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:drawableLeft="@drawable/umdf_app_icon_gray_bg"/>
 
 
@@ -32,8 +32,8 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbuttontwo"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -43,8 +43,8 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbutton"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:drawableLeft="@drawable/umdf_app_icon_gray_bg"/>
 
 
@@ -57,8 +57,8 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbuttontwo"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
 
     <Button
         android:layout_width="fill_parent"
@@ -68,8 +68,8 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbutton"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:drawableLeft="@drawable/umdf_app_icon_gray_bg"/>
 
 
@@ -82,7 +82,7 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbuttontwo"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
 
 </LinearLayout>
