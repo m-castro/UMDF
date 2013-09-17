@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
                 Intent connectIntent = new Intent(getApplicationContext(), Support.class);
                 startActivity(connectIntent);
-//                setContentView(R.layout.connect_layout);
+//                setContentView(R.layout.support_layout);
             }
         });
 
@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-//                setContentView(R.layout.contact_layout);
+//                setContentView(R.layout.connect_layout);
                 Intent connectIntent = new Intent(getApplicationContext(), Connect.class);
                 startActivity(connectIntent);
             }
