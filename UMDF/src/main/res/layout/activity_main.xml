@@ -19,7 +19,8 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbutton"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="60dp"/>
 
 
     <Button
@@ -31,6 +32,19 @@
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbuttontwo"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:drawableLeft="@drawable/umdf_app_icon_gray_bg"
+        android:id="@+id/contact"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/roundedbuttonfour"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"/>
 
     <Button
@@ -42,16 +56,7 @@
         android:textStyle="bold"
         android:textColor="#00713d"
         android:background="@drawable/roundedbuttonthree"
-        android:layout_marginBottom="20dp"/>
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Connect"
-        android:drawableLeft="@drawable/umdf_app_icon_gray_bg"
-        android:id="@+id/contact"
-        android:textStyle="bold"
-        android:textColor="#ffffff"
-        android:background="@drawable/roundedbuttonfour"/>
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>
