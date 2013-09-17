@@ -1,5 +1,6 @@
 package com.example.umdf;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -7,7 +8,7 @@ import android.os.Bundle;
 /**
  * Created by Manny on 9/16/13.
  */
-public class Donate extends MainActivity {
+public class Donate extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

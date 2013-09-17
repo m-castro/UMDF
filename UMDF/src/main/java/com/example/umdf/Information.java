@@ -1,5 +1,6 @@
 package com.example.umdf;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,7 +10,7 @@ import android.widget.TextView;
 /**
  * Created by Manny on 9/16/13.
  */
-class Information extends MainActivity {
+public class Information extends Activity {
 
 
     @Override

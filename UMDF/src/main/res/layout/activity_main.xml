@@ -14,7 +14,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Mitochondrial Disease Info"
-        android:drawableLeft="@drawable/umdf_app_icon"
+        android:drawableLeft="@drawable/umdf_app_icon_gray_bg"
         android:id="@+id/information"
         android:textStyle="bold"
         android:textColor="#ffffff"
@@ -26,7 +26,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Find Support"
-        android:drawableLeft="@drawable/umdf_app_icon"
+        android:drawableLeft="@drawable/umdf_app_icon_gray_bg"
         android:id="@+id/connect"
         android:textStyle="bold"
         android:textColor="#ffffff"
@@ -37,7 +37,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Donate"
-        android:drawableLeft="@drawable/umdf_app_icon"
+        android:drawableLeft="@drawable/umdf_app_icon_gray_bg"
         android:id="@+id/donate"
         android:textStyle="bold"
         android:textColor="#00713d"
@@ -48,10 +48,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Connect"
-        android:drawableLeft="@drawable/umdf_app_icon"
+        android:drawableLeft="@drawable/umdf_app_icon_gray_bg"
         android:id="@+id/contact"
         android:textStyle="bold"
-
         android:textColor="#ffffff"
         android:background="@drawable/roundedbuttonfour"/>
 
