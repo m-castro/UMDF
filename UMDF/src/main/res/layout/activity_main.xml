@@ -18,8 +18,9 @@
         android:id="@+id/information"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:background="#00713d"
+        android:background="@drawable/roundedbutton"
         android:layout_marginBottom="20dp"/>
+
 
     <Button
         android:layout_width="fill_parent"

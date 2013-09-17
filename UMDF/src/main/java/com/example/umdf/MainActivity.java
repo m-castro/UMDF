@@ -15,9 +15,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Button infoButton = (Button) findViewById(R.id.information);
-        Button connectButton = (Button) findViewById(R.id.connect);
+        Button supportButton = (Button) findViewById(R.id.connect);
         Button donateButton = (Button) findViewById(R.id.donate);
-        Button contactButton = (Button) findViewById(R.id.contact);
+        Button connectButton = (Button) findViewById(R.id.contact);
 
         infoButton.setOnClickListener(new View.OnClickListener() {
 
@@ -31,11 +31,13 @@ public class MainActivity extends Activity {
             }
         });
 
-        connectButton.setOnClickListener(new View.OnClickListener() {
+        supportButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.connect_layout);
+                Intent connectIntent = new Intent(getApplicationContext(), Support.class);
+                startActivity(connectIntent);
+//                setContentView(R.layout.connect_layout);
             }
         });
 
@@ -43,17 +45,22 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.donate_layout);
+//                setContentView(R.layout.donate_layout);
+                Intent donateIntent = new Intent(getApplicationContext(), Donate.class);
+                startActivity(donateIntent);
             }
         });
 
-        contactButton.setOnClickListener(new View.OnClickListener() {
+        connectButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.contact_layout);
+//                setContentView(R.layout.contact_layout);
+                Intent connectIntent = new Intent(getApplicationContext(), Connect.class);
+                startActivity(connectIntent);
             }
         });
+
 
 
     }
