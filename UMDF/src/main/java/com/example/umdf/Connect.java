@@ -12,7 +12,7 @@ public class Connect extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contact_layout);
+//        setContentView(R.layout.contact_layout);
 
         Uri uri = Uri.parse("https://www.facebook.com/pages/United-Mitochondrial-Disease-Foundation/202570833099467");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);

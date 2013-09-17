@@ -30,7 +30,7 @@
         android:id="@+id/connect"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:background="#0e875c"
+        android:background="@drawable/roundedbuttontwo"
         android:layout_marginBottom="20dp"/>
 
     <Button
@@ -41,18 +41,18 @@
         android:id="@+id/donate"
         android:textStyle="bold"
         android:textColor="#00713d"
-        android:background="#adff2f"
+        android:background="@drawable/roundedbuttonthree"
         android:layout_marginBottom="20dp"/>
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Contact Us"
+        android:text="Connect"
         android:drawableLeft="@drawable/umdf_app_icon"
         android:id="@+id/contact"
         android:textStyle="bold"
 
         android:textColor="#ffffff"
-        android:background="#5ea182"/>
+        android:background="@drawable/roundedbuttonfour"/>
 
 </LinearLayout>
