@@ -26,8 +26,7 @@ public class MainActivity extends Activity {
                 Intent infoIntent = new Intent(getApplicationContext(), Information.class);
 //                infoIntent.putExtra(" ", " ");
                 startActivity(infoIntent);
-//                setContentView(R.layout.info_layout);
-//                Intent infoIntent = new Intent(setContentView(R.layout.info_layout));
+//
             }
         });
 
@@ -35,9 +34,10 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-                Intent connectIntent = new Intent(getApplicationContext(), Support.class);
-                startActivity(connectIntent);
-//                setContentView(R.layout.support_layout);
+                Intent connectIntent = new Intent(MainActivity.this, Support.class);
+                MainActivity.this.startActivity(connectIntent);
+
+
             }
         });
 
@@ -48,6 +48,9 @@ public class MainActivity extends Activity {
 //                setContentView(R.layout.donate_layout);
                 Intent donateIntent = new Intent(getApplicationContext(), Donate.class);
                 startActivity(donateIntent);
+
+                Intent myIntent = new Intent(MainActivity.this, Donate.class);
+                MainActivity.this.startActivity(myIntent);
             }
         });
 
