@@ -4,5 +4,15 @@
     <string name="app_name">UMDF</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string-array name="Info">
+        <item>What is Mitochondrial Disease</item>
+        <item>Types of Mitochondrial Disease</item>
+        <item>Possible Symptoms</item>
+        <item>Getting a Diagnosis</item>
+        <item>Treatments &amp; Therapies</item>
+        <item>FAQs </item>
+        <item>Other Diseases Linked to Mitochondrial Disease
+        </item>
+    </string-array>
 
 </resources>

@@ -1,16 +1,14 @@
 package com.example.umdf;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.webkit.WebView;
-import android.widget.TextView;
+import android.widget.ListView;
 
 /**
  * Created by Manny on 9/16/13.
  */
 public class Information extends Activity {
+    public ListView listView;
 
 
     @Override
@@ -18,19 +16,19 @@ public class Information extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_layout);
 
-        Uri uri = Uri.parse("http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934627");
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-
-//        WebView webview = new WebView(this);
-//        setContentView(webview);
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Uri uri = Uri.parse("http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934627");
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                startActivity(intent);
 //
-//        webview.loadUrl("http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934627");
+//
+//            }
+//        });
 
-//        Bundle extras = getIntent().getExtras();
-//        TextView infoView1 = (TextView) findViewById(R.id.infoView1);
-//        if (extras != null) {
-//        infoView1.setText(extras.getString("info"));
-//        }
+
+
+
     }
 }
