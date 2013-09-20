@@ -28,8 +28,8 @@ public class Connect extends Activity {
 
         mTextView = (TextView)findViewById(R.id.socialMediaTextView);
 
-        socialMedia = "Selecting any of the icons below\n" +
-                "will launch that particular social media site for the UMDF";
+        socialMedia = "Select Icon Below To Launch:";
+
 
         mTextView.setText(socialMedia);
 
