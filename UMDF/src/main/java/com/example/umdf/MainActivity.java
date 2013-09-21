@@ -53,8 +53,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 //                setContentView(R.layout.donate_layout);
-                Intent donateIntent = new Intent(getApplicationContext(), Donate.class);
-                startActivity(donateIntent);
+                //Intent donateIntent = new Intent(getApplicationContext(), Donate.class);
+                //startActivity(donateIntent);
 
                 Intent myIntent = new Intent(MainActivity.this, Donate.class);
                 MainActivity.this.startActivity(myIntent);
