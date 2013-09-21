@@ -16,5 +16,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/listView"
         android:entries="@array/Info"
+        android:clickable="true"
         android:layout_gravity="center" />
 </LinearLayout>

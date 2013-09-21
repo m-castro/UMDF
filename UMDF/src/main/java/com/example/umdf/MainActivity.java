@@ -6,18 +6,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
+
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         Button infoButton = (Button) findViewById(R.id.information);
         Button supportButton = (Button) findViewById(R.id.connect);
         Button donateButton = (Button) findViewById(R.id.donate);
         Button connectButton = (Button) findViewById(R.id.contact);
+
+
 
         infoButton.setOnClickListener(new View.OnClickListener() {
 
@@ -77,5 +84,10 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+
+    public void onListItemClick(ListView l, View v, int position, long id) {
+
+
+
+    }
 }
