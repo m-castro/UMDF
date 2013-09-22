@@ -6,11 +6,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
-    private ListView listView;
+//    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,9 +84,5 @@ public class MainActivity extends Activity {
         return true;
     }
 
-    public void onListItemClick(ListView l, View v, int position, long id) {
 
-
-
-    }
 }
