@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.apache.http.protocol.HTTP;
+
 /**
  * Created by Manny on 9/16/13.
  */
@@ -39,11 +41,11 @@ public class Connect extends Activity {
             mTextView.setText(socialMedia);
 
             mTextTwo = (TextView) findViewById(R.id.phoneNumber);
-            phone = "Call Us: 1-888-317-UMDF (8633)";
+            phone = "Call Us:";
             mTextTwo.setText(phone);
 
             mTextThree = (TextView) findViewById(R.id.email);
-            email = "Email Us: info@umdf.org";
+            email = "Email Us:";
             mTextThree.setText(email);
 
 
@@ -86,17 +88,22 @@ public class Connect extends Activity {
             Email.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Uri uri = Uri.parse("http://www.umdf.org/site/mailto:info@umdf.org");
-                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                    startActivity(intent);
+                    Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                    emailIntent.setType(HTTP.PLAIN_TEXT_TYPE);
+                    emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"info@umdf.org"});
+                    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Email subject");
+                    emailIntent.putExtra(Intent.EXTRA_TEXT, "Email message text");
+                    emailIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("content://path/to/email/attachment"));
+
+
                 }
             });
 
             Phone.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Uri uri = Uri.parse("https://plus.google.com/109599791610901846365/posts");
-                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:18883178633"));
                     startActivity(intent);
                 }
             });
