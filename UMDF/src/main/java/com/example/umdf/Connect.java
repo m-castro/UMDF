@@ -88,13 +88,12 @@ public class Connect extends Activity {
             Email.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                    emailIntent.setType(HTTP.PLAIN_TEXT_TYPE);
-                    emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"info@umdf.org"});
-                    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Email subject");
-                    emailIntent.putExtra(Intent.EXTRA_TEXT, "Email message text");
-                    emailIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("content://path/to/email/attachment"));
-
+                    Intent intent = new Intent(Intent.ACTION_SEND);
+                    intent.setType("plain/text");
+                    intent.putExtra(Intent.EXTRA_EMAIL, new String[] { "info@umdf.org" });
+                    intent.putExtra(Intent.EXTRA_SUBJECT, "");
+                    intent.putExtra(Intent.EXTRA_TEXT, "");
+                    startActivity(Intent.createChooser(intent, ""));
 
                 }
             });
