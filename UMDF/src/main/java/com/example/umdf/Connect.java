@@ -39,11 +39,11 @@ public class Connect extends Activity {
             mTextView.setText(socialMedia);
 
             mTextTwo = (TextView) findViewById(R.id.phoneNumber);
-            phone = "Call Us:";
+            phone = "Call Us: 1-888-317-UMDF (8633)";
             mTextTwo.setText(phone);
 
             mTextThree = (TextView) findViewById(R.id.email);
-            email = "Email Us:";
+            email = "Email Us: info@umdf.org";
             mTextThree.setText(email);
 
 
@@ -86,7 +86,7 @@ public class Connect extends Activity {
             Email.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Uri uri = Uri.parse("https://plus.google.com/109599791610901846365/posts");
+                    Uri uri = Uri.parse("http://www.umdf.org/site/mailto:info@umdf.org");
                     Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(intent);
                 }
