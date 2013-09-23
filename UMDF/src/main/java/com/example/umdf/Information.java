@@ -20,16 +20,16 @@ public class Information extends Activity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_layout);
 
-        final String [] str = {"What is Mitochondrial Disease","Types of Mitochondrial Disease","Possible Symptoms", "Getting a Diagnosis","Treatments & Therapies","FAQ's", "Other Diseases Linked to Mitochondrial Disease"};
+        final String [] info = {"What is Mitochondrial Disease","Types of Mitochondrial Disease","Possible Symptoms", "Getting a Diagnosis","Treatments & Therapies","FAQ's", "Other Diseases Linked to Mitochondrial Disease"};
         final ListView lv = (ListView) findViewById(R.id.listView);
 
-        ArrayAdapter<Object> adapt = new ArrayAdapter<Object>(getApplicationContext(), android.R.layout.simple_list_item_1, str);
-        lv.setAdapter(adapt);
+        ArrayAdapter<Object> adapter = new ArrayAdapter<Object>(getApplicationContext(), android.R.layout.simple_list_item_1, info);
+        lv.setAdapter(adapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-//                super.onItemClick(l, v, position, id);
-//                String string = str[position];
+            public void onItemClick(AdapterView<?> arg0, View View, int position, long id) {
+//                super.onItemClick(0, View, position, id);
+                String string = info[position];
 
                 try{
                     Uri uri = Uri.parse("http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934627");
