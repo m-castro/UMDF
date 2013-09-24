@@ -34,11 +34,20 @@ public class Support extends Activity {
         Form.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.contact_form);
+//                setContentView(R.layout.contact_form);
+                Intent intent = new Intent(getApplicationContext(),Donate.class);
+                startActivity(intent);
+
+
+
 
 
 
             }
+
+
+
+
         });
 
 
