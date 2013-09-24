@@ -9,14 +9,13 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-//    private ListView listView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         Button infoButton = (Button) findViewById(R.id.information);
         Button supportButton = (Button) findViewById(R.id.connect);
@@ -25,12 +24,13 @@ public class MainActivity extends Activity {
 
 
 
+
+
         infoButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent infoIntent = new Intent(getApplicationContext(), Information.class);
-//                infoIntent.putExtra(" ", " ");
                 startActivity(infoIntent);
 //
             }
@@ -51,10 +51,6 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View view) {
-//                setContentView(R.layout.donate_layout);
-                //Intent donateIntent = new Intent(getApplicationContext(), Donate.class);
-                //startActivity(donateIntent);
-
                 Intent myIntent = new Intent(MainActivity.this, Donate.class);
                 MainActivity.this.startActivity(myIntent);
             }
@@ -69,20 +65,26 @@ public class MainActivity extends Activity {
                 startActivity(connectIntent);
             }
         });
-
-
-
-
-
     }
 
 
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+        }
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
