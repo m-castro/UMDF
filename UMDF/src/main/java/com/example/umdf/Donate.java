@@ -1,8 +1,6 @@
 package com.example.umdf;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
 /**
@@ -12,6 +10,8 @@ public class Donate extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.contact_form);
+
 
 
         //Uri uri = Uri.parse("https://secure.umdf.org/site/apps/ka/sd/donor.asp?c=8qKOJ0MvF7LUG&b=7966007&en=joLIIKNoH3IALNOpG4IBJOOnFeKVK0PyEkLLLPPrE7KDJPOzFsG");
