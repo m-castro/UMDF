@@ -3,6 +3,7 @@
     <string-array name="Links" />
 
         <string-array name="states">
+            <item>@string/state0</item>
             <item>@string/state1</item>
             <item>@string/state2</item>
             <item>@string/state3</item>

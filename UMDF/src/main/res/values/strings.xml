@@ -8,7 +8,7 @@
 
 
         <!--Other string resources also defined in this file… -->
-        <string name="state0"> </string>
+        <string name="state0">State/Territory</string>
         <string name="state1">AL</string>
         <string name="state2">AK</string>
         <string name="state3">AS</string>
