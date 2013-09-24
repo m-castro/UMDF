@@ -3,17 +3,76 @@
 
     <string name="app_name">UMDF</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world"></string>
-    <string-array name="Info">
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item>
-        </item>
-    </string-array>
+
+
+
+
+        <!--Other string resources also defined in this file… -->
+        <string name="state0"> </string>
+        <string name="state1">AL</string>
+        <string name="state2">AK</string>
+        <string name="state3">AS</string>
+        <string name="state4">AZ</string>
+        <string name="state5">AR</string>
+        <string name="state6">AA</string>
+        <string name="state7">AE</string>
+        <string name="state8">AP</string>
+        <string name="state9">CA</string>
+        <string name="state10">CO</string>
+        <string name="state11">CT</string>
+        <string name="state12">DE</string>
+        <string name="state13">DC</string>
+        <string name="state14">FM</string>
+        <string name="state15">FL</string>
+        <string name="state16">GA</string>
+        <string name="state17">GU</string>
+        <string name="state18">HI</string>
+        <string name="state19">ID</string>
+        <string name="state20">IL</string>
+        <string name="state21">IN</string>
+        <string name="state22">IA</string>
+        <string name="state23">KS</string>
+        <string name="state24">KY</string>
+        <string name="state25">LA</string>
+        <string name="state26">ME</string>
+        <string name="state27">MH</string>
+        <string name="state28">MD</string>
+        <string name="state29">MA</string>
+        <string name="state30">MI</string>
+        <string name="state31">MN</string>
+        <string name="state32">MS</string>
+        <string name="state33">MO</string>
+        <string name="state34">MT</string>
+        <string name="state35">NE</string>
+        <string name="state36">NV</string>
+        <string name="state37">NH</string>
+        <string name="state38">NJ</string>
+        <string name="state39">NM</string>
+        <string name="state40">NY</string>
+        <string name="state41">NC</string>
+        <string name="state42">ND</string>
+        <string name="state43">MP</string>
+        <string name="state44">OH</string>
+        <string name="state45">OK</string>
+        <string name="state46">OR</string>
+        <string name="state47">PW</string>
+        <string name="state48">PA</string>
+        <string name="state49">PR</string>
+        <string name="state50">RI</string>
+        <string name="state51">SC</string>
+        <string name="state52">SD</string>
+        <string name="state53">TN</string>
+        <string name="state54">TX</string>
+        <string name="state55">UT</string>
+        <string name="state56">VT</string>
+        <string name="state57">VI</string>
+        <string name="state58">VA</string>
+        <string name="state59">WA</string>
+        <string name="state60">WV</string>
+        <string name="state61">WI</string>
+        <string name="state62">WY</string>
+        <string name="state63">XX</string>
+
 
 
 

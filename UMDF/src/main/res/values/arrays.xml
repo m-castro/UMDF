@@ -1,4 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="Links" />
+
+        <string-array name="states">
+            <item>@string/state1</item>
+            <item>@string/state2</item>
+            <item>@string/state3</item>
+            <item>@string/state4</item>
+            <item>@string/state5</item>
+            <item>@string/state6</item>
+            <item>@string/state7</item>
+            <item>@string/state8</item>
+            <item>@string/state9</item>
+            <item>@string/state10</item>
+            <item>@string/state11</item>
+            <item>@string/state12</item>
+            <item>@string/state13</item>
+            <item>@string/state14</item>
+            <item>@string/state15</item>
+            <item>@string/state16</item>
+            <item>@string/state17</item>
+            <item>@string/state18</item>
+            <item>@string/state19</item>
+            <item>@string/state20</item>
+            <item>@string/state21</item>
+            <item>@string/state22</item>
+            <item>@string/state23</item>
+            <item>@string/state24</item>
+            <item>@string/state25</item>
+            <item>@string/state26</item>
+            <item>@string/state27</item>
+            <item>@string/state28</item>
+            <item>@string/state29</item>
+            <item>@string/state30</item>
+            <item>@string/state31</item>
+            <item>@string/state32</item>
+            <item>@string/state33</item>
+            <item>@string/state34</item>
+            <item>@string/state35</item>
+            <item>@string/state36</item>
+            <item>@string/state37</item>
+            <item>@string/state38</item>
+            <item>@string/state39</item>
+            <item>@string/state40</item>
+            <item>@string/state41</item>
+            <item>@string/state42</item>
+            <item>@string/state43</item>
+            <item>@string/state44</item>
+            <item>@string/state45</item>
+            <item>@string/state46</item>
+            <item>@string/state47</item>
+            <item>@string/state48</item>
+            <item>@string/state49</item>
+            <item>@string/state50</item>
+            <item>@string/state51</item>
+            <item>@string/state52</item>
+            <item>@string/state53</item>
+            <item>@string/state54</item>
+            <item>@string/state55</item>
+            <item>@string/state56</item>
+            <item>@string/state57</item>
+            <item>@string/state58</item>
+            <item>@string/state59</item>
+            <item>@string/state60</item>
+            <item>@string/state61</item>
+            <item>@string/state62</item>
+            <item>@string/state63</item>
+        </string-array>
+
+
+
 </resources>

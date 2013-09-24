@@ -1,78 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="8dp"
-
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:orientation="vertical"
-        android:gravity="center">
-        <TextView style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <!--Put form controls here-->
+        <TextView
+            android:id="@+id/TextViewContactForm"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:singleLine="true"
-            android:paddingLeft="13dp"
-            android:text="account" />
-        <AutoCompleteTextView
-            android:id="@+id/email_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:singleLine="true"
-            android:inputType="textEmailAddress"
-            android:imeOptions="actionNext"
-            android:hint="email address" />
+            android:text="Contact Form"
+            android:textSize="30dp">
+        </TextView>
         <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
+            android:id="@+id/EditTextFirstName"
             android:layout_height="wrap_content"
-
-            android:singleLine="true"
-            android:inputType="textPassword"
-            android:hint="password" />
-        <TextView style="?android:listSeparatorTextViewStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:singleLine="true"
-            android:paddingLeft="13dp"
-            android:text="information" />
-        <AutoCompleteTextView
-            android:id="@+id/full_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:singleLine="true"
+            android:hint="First Name"
             android:inputType="textPersonName"
-            android:imeOptions="actionNext"
-            android:capitalize="words"
-            android:hint="full name" />
-        <AutoCompleteTextView
-            android:id="@+id/phone_number"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent">
+        </EditText>
+        <EditText
+            android:id="@+id/EditTextLastName"
             android:layout_height="wrap_content"
-
-            android:singleLine="true"
-            android:phoneNumber="true"
-            android:inputType="phone"
-            android:imeOptions="actionNext"
-            android:hint="phone number" />
-
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+        <EditText
+            android:id="@+id/EditTextEmail"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+        <EditText
+            android:id="@+id/EditTextPhone"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+        <EditText
+            android:id="@+id/EditTextCity"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="textPersonName"
+            android:layout_width="fill_parent">
+        </EditText>
+        <Spinner
+            android:id="@+id/SpinnerFeedbackType"
+            android:layout_height="wrap_content"
+            android:prompt="@string/state0"
+            android:layout_width="fill_parent"
+            android:entries="@array/states">
+        </Spinner>
+        <EditText
+            android:id="@+id/EditTextFeedbackBody"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:layout_width="fill_parent">
+        </EditText>
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/ButtonSendFeedback"
             android:layout_height="wrap_content"
-            android:text="Send"
-            android:onClick="startHomeScreen" />
+            android:text="Send Info"
+            android:onClick="sendFeedback"
+            android:layout_width="fill_parent">
+        </Button>
     </LinearLayout>
-
-
-</LinearLayout>
+</ScrollView>

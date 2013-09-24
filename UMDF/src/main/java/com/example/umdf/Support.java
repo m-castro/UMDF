@@ -37,6 +37,7 @@ public class Support extends Activity {
                 setContentView(R.layout.contact_form);
 
 
+
             }
         });
 
