@@ -6,41 +6,51 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 /**
  * Created by Manny on 9/16/13.
  */
-public class Information extends Activity  {
+public class Information  extends Activity {
+
+    private ListView mListView;
+    private PlaceAdapter placeAdapter;
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_layout);
 
-        final String [] info = {"What is Mitochondrial Disease","Types of Mitochondrial Disease","Possible Symptoms", "Getting a Diagnosis","Treatments & Therapies","FAQ's", "Other Diseases Linked to Mitochondrial Disease"};
-        final ListView lv = (ListView) findViewById(R.id.listView);
+        Page[] myPagesArray = new Page[]
+                {
+                        new Page("What is Mitochondrial Disease?", "http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934627"),
+                        new Page("Types of Mitochondrial Disease", "http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934629"),
+                        new Page("Possible Symptoms", "http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934631"),
+                        new Page("Getting a Diagnosis", "http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934633"),
+                        new Page("Treatments & Therapies", "http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934635"),
+                        new Page("FAQ\'s", "http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934639"),
+                        new Page("Other Diseases Linked to Mitochondrial Disease", "http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934637")
+                };
 
-        ArrayAdapter<Object> adapter = new ArrayAdapter<Object>(getApplicationContext(), android.R.layout.simple_list_item_1, info);
-        lv.setAdapter(adapter);
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        placeAdapter = new PlaceAdapter(getApplicationContext(),R.layout.list_row,myPagesArray);
+
+        mListView = (ListView) findViewById(R.id.listView);
+        if(mListView != null){
+            //USE IT
+            mListView.setAdapter(placeAdapter);
+        }
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> arg0, View View, int position, long id) {
-//                super.onItemClick(0, View, position, id);
-                String string = info[position];
-
-                try{
-                    Uri uri = Uri.parse("http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934627");
-                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                    startActivity(intent);
-
-                }catch (Exception e){
-                    e.printStackTrace();
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Page p = placeAdapter.getItem(i);
+                //now i can get data for that thing.
+                String content = p.getmUrl();
+                Uri webpage = Uri.parse(content);
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
             }
-            }
-
         });
 
     }
