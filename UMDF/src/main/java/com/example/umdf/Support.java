@@ -34,9 +34,9 @@ public class Support extends Activity {
         Form.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("http://www.umdf.org/site/c.8qKOJ0MvF7LUG/b.7978381/k.241C/Chapters_and_Groups_Contact_Form/apps/ka/ct/contactus.asp?c=8qKOJ0MvF7LUG&b=7978381&en=atKJKXMDK9JSL7NGL8KOL9PXLsK3KgPTJhKRJcNYLxG");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                setContentView(R.layout.contact_form);
+
+
             }
         });
 

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.apache.http.protocol.HTTP;
+
 
 /**
  * Created by Manny on 9/16/13.
