@@ -5,7 +5,8 @@
     android:id="@+id/ScrollView01"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="vertical">
+    android:scrollbars="vertical"
+    android:background="#ffffff">
     <LinearLayout
         android:layout_width="fill_parent"
         android:orientation="vertical"
@@ -15,8 +16,10 @@
             android:id="@+id/TextViewContactForm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Contact Form"
-            android:textSize="30dp">
+            android:text="Want to Connect? Please Email Us! "
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp">
         </TextView>
         <EditText
             android:id="@+id/EditTextFirstName"
@@ -36,21 +39,21 @@
             android:id="@+id/EditTextEmail"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:inputType="textPersonName"
+            android:inputType="textWebEmailAddress"
             android:layout_width="fill_parent">
         </EditText>
         <EditText
             android:id="@+id/EditTextPhone"
             android:layout_height="wrap_content"
             android:hint="Phone"
-            android:inputType="textPersonName"
+            android:inputType="phone"
             android:layout_width="fill_parent">
         </EditText>
         <EditText
             android:id="@+id/EditTextCity"
             android:layout_height="wrap_content"
             android:hint="City"
-            android:inputType="textPersonName"
+            android:inputType="textAutoComplete"
             android:layout_width="fill_parent">
         </EditText>
         <Spinner
@@ -63,7 +66,7 @@
         <EditText
             android:id="@+id/EditTextFeedbackBody"
             android:layout_height="wrap_content"
-            android:hint=""
+            android:hint="@string/connect_form"
             android:inputType="textMultiLine"
             android:lines="5"
             android:layout_width="fill_parent">
@@ -71,9 +74,11 @@
         <Button
             android:id="@+id/ButtonSendFeedback"
             android:layout_height="wrap_content"
-            android:text="Send Info"
+            android:layout_width="fill_parent"
+            android:text="Send Email"
             android:onClick="sendFeedback"
-            android:layout_width="fill_parent">
+            android:background="@drawable/roundedbuttontwo"
+            android:textColor="#ffffff">
         </Button>
     </LinearLayout>
 </ScrollView>
