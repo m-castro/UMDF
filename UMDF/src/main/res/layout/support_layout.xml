@@ -18,7 +18,8 @@
         android:id="@+id/contacform"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:background="@drawable/roundedbutton"
+        android:drawableLeft="@drawable/umdfhires"
+        android:background="@drawable/roundedbuttontwo"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="20dp"/>
 
@@ -29,6 +30,7 @@
         android:text="Event Calendar"
         android:id="@+id/eventcal"
         android:textStyle="bold"
+        android:drawableLeft="@drawable/umdfhires"
         android:textColor="#ffffff"
         android:background="@drawable/roundedbuttontwo"
         android:layout_marginBottom="30dp"/>

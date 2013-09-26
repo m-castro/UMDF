@@ -73,12 +73,13 @@
         </EditText>
         <Button
             android:id="@+id/ButtonSendFeedback"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:text="Send Email"
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:text="Submit"
             android:onClick="sendFeedback"
             android:background="@drawable/roundedbuttontwo"
-            android:textColor="#ffffff">
+            android:textColor="#ffffff"
+            android:layout_gravity="center">
         </Button>
     </LinearLayout>
 </ScrollView>

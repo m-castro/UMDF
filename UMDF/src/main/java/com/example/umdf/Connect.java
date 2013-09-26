@@ -21,7 +21,7 @@ public class Connect extends Activity {
         TextView mTextTwo;
         TextView mTextThree;
         String socialMedia;
-        String phone;
+        //String phone;
         String email;
 
         @Override
@@ -37,15 +37,15 @@ public class Connect extends Activity {
             ImageView Phone = (ImageView) findViewById(R.id.phoneIconTwo);
 
             mTextView = (TextView)findViewById(R.id.socialMediaTextView);
-            socialMedia = "Select Icon Below To Launch:";
+            socialMedia = "Join Our Community:";
             mTextView.setText(socialMedia);
 
-            mTextTwo = (TextView) findViewById(R.id.phoneNumber);
-            phone = "Call Us:";
-            mTextTwo.setText(phone);
+            //mTextTwo = (TextView) findViewById(R.id.phoneNumber);
+            //phone = "Call Us:";
+            //mTextTwo.setText(phone);
 
             mTextThree = (TextView) findViewById(R.id.email);
-            email = "Email Us:";
+            email = "Contact Us:";
             mTextThree.setText(email);
 
 
