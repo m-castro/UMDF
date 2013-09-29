@@ -17,5 +17,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listView"
+        android:dividerHeight="7px"
         android:layout_gravity="center" />
 </LinearLayout>

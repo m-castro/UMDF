@@ -22,6 +22,8 @@ public class Information  extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_layout);
 
+
+
         Page[] myPagesArray = new Page[]
                 {
                         new Page("What is Mitochondrial Disease?", "http://www.umdf.org/site/pp.aspx?c=8qKOJ0MvF7LUG&b=7934627"),
