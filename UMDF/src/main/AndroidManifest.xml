@@ -32,6 +32,8 @@
         <activity android:name=".Support"/>
         <activity android:name=".Donate"/>
         <activity android:name=".Connect"/>
+
     </application>
+
 
 </manifest>
