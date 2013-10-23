@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,13 +10,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="#d3d3d3">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -24,94 +18,94 @@
         android:gravity="center"
         android:layout_weight="1"
         android:id="@+id/socialMediaTextView"
-        android:textStyle="bold"/>
-     </LinearLayout>
+        android:textStyle="bold"
+        android:text='"adsasd"'
+        android:layout_alignParentTop="true" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp">
+
+
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/facebookIcon"
         android:src="@drawable/facebook"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:layout_below="@+id/socialMediaTextView"
+        android:layout_toLeftOf="@+id/phoneIconTwo"
+        android:layout_alignLeft="@+id/socialMediaTextView" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/twitterIcon"
         android:src="@drawable/twitter_icon"
-        android:layout_weight="1"/>
-    </LinearLayout>
+        android:layout_weight="1"
+        android:layout_below="@+id/socialMediaTextView"
+        android:layout_alignLeft="@+id/googlePlusIcon"
+        android:layout_alignParentRight="true" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:gravity="center|bottom"
+
+            android:textStyle="bold"
+            android:text='"tom"'
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp">
+        android:src="@drawable/phoneicon"
+        android:id="@+id/phoneIconTwo"
+        android:layout_weight="1"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emailicon"
+        android:layout_weight="1"
+        android:id="@+id/emailIconTwo"
+        android:layout_below="@+id/phoneIconTwo"
+        android:layout_centerHorizontal="true" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/googlePlusIcon"
         android:src="@drawable/googleplus"
-        android:layout_weight="3"/>
+        android:layout_weight="3"
+        android:layout_alignTop="@+id/youTubeIcon"
+        android:layout_toRightOf="@+id/phoneIconTwo"
+        android:layout_alignRight="@+id/email"
+        android:layout_alignBottom="@+id/youTubeIcon" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/youTubeIcon"
-        android:src="@drawable/yutubetwo"
-        android:layout_weight="3"/>
-    </LinearLayout>
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/youTubeIcon"
+    android:src="@drawable/yutubetwo"
+    android:layout_weight="3"
+        android:layout_above="@+id/email"
+        android:layout_alignLeft="@+id/facebookIcon"
+        android:layout_marginBottom="13dp"
+        android:layout_toLeftOf="@+id/phoneIconTwo" />
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/email"
-            android:gravity="center"
-            android:textStyle="bold"/>
-
-    </LinearLayout>
-
-
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/emailicon"
-            android:layout_weight="1"
-            android:id="@+id/emailIconTwo"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/phoneicon"
-            android:id="@+id/phoneIconTwo"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-
-
-
-</LinearLayout>
+</RelativeLayout>
