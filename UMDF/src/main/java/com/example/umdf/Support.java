@@ -50,9 +50,6 @@ public class Support extends Activity {
 
 
 
-
-
-
             }
 
 

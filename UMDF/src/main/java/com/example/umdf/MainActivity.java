@@ -35,10 +35,9 @@ public class MainActivity extends Activity {
         infoButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View view) {
-                Intent infoIntent = new Intent(getApplicationContext(), Information.class);
-//                infoIntent.putExtra(" ", " ");
-                startActivity(infoIntent);
+                public void onClick(View view) {
+                    Intent infoIntent = new Intent(getApplicationContext(), Information.class);
+                    startActivity(infoIntent);
 //
             }
         });
