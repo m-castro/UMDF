@@ -7,9 +7,12 @@ public class Page {
     public String mNameOfPage;
     public String mUrl;
 
+
+
     public Page (String startNameOfPage, String startUrl){
         this.mNameOfPage = startNameOfPage;
         this.mUrl = startUrl;
+
     }
 
     public String getmUrl() {
