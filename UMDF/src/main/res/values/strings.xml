@@ -5,9 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="connect_form">To better serve you, please describe in detail what you are seeking.</string>
 
-
-
-
         <!--Other string resources also defined in this file… -->
         <string name="state0">State/Territory</string>
         <string name="state1">AL</string>
@@ -73,6 +70,32 @@
         <string name="state61">WI</string>
         <string name="state62">WY</string>
         <string name="state63">XX</string>
+
+
+
+    <string name="Event_Calendar"/>
+
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+
 
 
 

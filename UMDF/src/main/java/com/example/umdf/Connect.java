@@ -39,6 +39,7 @@ public class Connect extends Activity {
             getActionBar().setHomeButtonEnabled(true);
             getActionBar().setDisplayHomeAsUpEnabled(true);
 
+
             ImageView Facebook = (ImageView) findViewById(R.id.facebookIcon);
             ImageView Twitter = (ImageView) findViewById(R.id.twitterIcon);
             ImageView GooglePlus = (ImageView) findViewById(R.id.googlePlusIcon);

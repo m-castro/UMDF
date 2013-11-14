@@ -13,6 +13,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
+
 //    private ListView listView;
 
     @Override
@@ -20,9 +21,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         ActionBar bar = getActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00713d")));
-
 
 
         Button infoButton = (Button) findViewById(R.id.information);
@@ -31,13 +32,12 @@ public class MainActivity extends Activity {
         Button connectButton = (Button) findViewById(R.id.contact);
 
 
-
         infoButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
-                public void onClick(View view) {
-                    Intent infoIntent = new Intent(getApplicationContext(), Information.class);
-                    startActivity(infoIntent);
+            public void onClick(View view) {
+                Intent infoIntent = new Intent(getApplicationContext(), Information.class);
+                startActivity(infoIntent);
 //
             }
         });
@@ -83,9 +83,6 @@ public class MainActivity extends Activity {
         });
 
 
-
-
-
     }
 
 
@@ -95,6 +92,7 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
 
 
 }
